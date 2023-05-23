@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GPSTracker - My Website</title>
+    <style>
+        /* Add CSS styles here */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        #sidebar {
+            background-color: #f0f0f0;
+            width: 200px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+        }
+
+        #content {
+            margin-left: 220px; /* Adjust this value to leave space for the sidebar */
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-top: 0;
+        }
+
+        .tracker-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .tracker-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .tracker-info {
+            font-size: 16px;
+            color: #777;
+        }
+
+        .tracker-btn {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .tracker-btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <!-- Sidebar content here -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/GPStracker.html">GPSTracker</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <h1>Welcome to My Website</h1>
+        <div class="tracker-container">
+            <h2 class="tracker-title">GPSTracker</h2>
+            <p class="tracker-info">Track your location in real-time with GPSTracker.</p>
+            <a class="tracker-btn" href="#">Start Tracking</a>
+        </div>
+        <!-- Rest of your content here -->
+    </div>
+</body>
+</html>
