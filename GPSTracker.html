@@ -64,15 +64,33 @@
         .tracker-btn:hover {
             background-color: #555;
         }
+
+        #map {
+            height: 400px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
     </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=earth" async defer></script>
+    <script>
+        // Replace "YOUR_API_KEY" with your actual Google Maps API key
+
+        function initMap() {
+            const map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 37.7749, lng: -122.4194 }, // Set your desired initial map center coordinates
+                zoom: 12, // Set the initial zoom level
+            });
+
+            // Add your custom markers or other map functionality here
+        }
+    </script>
 </head>
 <body>
     <div id="sidebar">
         <!-- Sidebar content here -->
         <ul>
-            <li><a href="andersbrask.github.io/index">Home</a></li>
-            <li><a href="andersbrask.github.io/GPSTracker.html">GPSTracker</a></li>
-
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/GPSTracker.html">GPSTracker</a></li>
         </ul>
     </div>
     <div id="content">
@@ -80,9 +98,17 @@
         <div class="tracker-container">
             <h2 class="tracker-title">GPSTracker</h2>
             <p class="tracker-info">Track your location in real-time with GPSTracker.</p>
-            <a class="tracker-btn" href="#">Start Tracking</a>
+            <a class="tracker-btn" href="#">
+            Start Tracking</a>
+            <div id="map"></div> 
+            <!-- This div will hold the Google Earth map -->
         </div>
         <!-- Rest of your content here -->
     </div>
+    <script>
+    // Call the initMap function to initialize the map
+        initMap();
+    </script>
+
 </body>
 </html>
